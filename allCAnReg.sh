@@ -55,7 +55,7 @@ fabric-ca-client register -d --id.name user-org2 --id.secret org2UserPW --id.typ
 
 echo "Working on RCA-ORG3"
 
-export FABRIC_CA_CLIENT_TLS_CERTFILES=/tmp/hyperledger/org2/ca/crypto/ca-cert.pem
+export FABRIC_CA_CLIENT_TLS_CERTFILES=/tmp/hyperledger/org3/ca/crypto/ca-cert.pem
 export FABRIC_CA_CLIENT_HOME=/tmp/hyperledger/org3/ca/admin
 
 fabric-ca-client enroll -d -u https://rca-org3-admin:rca-org3-adminpw@0.0.0.0:7056
