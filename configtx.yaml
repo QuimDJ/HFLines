@@ -118,7 +118,7 @@ Organizations:
         # of the fabric.git development environment
         Name: org3MSP
 
-        # ID to load the MSP definition as
+        # ID to load the MSP definition as :
         ID: org3MSP
 
         MSPDir: /tmp/hyperledger/org3/msp
