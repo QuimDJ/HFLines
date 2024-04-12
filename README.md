@@ -1,5 +1,3 @@
-# HFLines - Proyecto Hyperledger - QDJ-BSM
-
 # HFLines: Proyecto Hyperledger Fabric QDJ-BSM
 ## Implementación de la Auditoria de Comunicaciones en UTE de Empresas
 ### [UTE=Unión Temporal de Empresas]
