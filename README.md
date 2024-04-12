@@ -1,8 +1,10 @@
-# fabric-ca-tutorial-v2
-Fabric CA Operation Guide Tutorial rewritten for fabric v2 (tested on v2.2)
+# HFLines: Proyecto Hyperledger Fabric QDJ-BSM
+## Implementación de la Auditoria de Comunicaciones en UTE de Empresas
+### [UTE=Unión Temporal de Empresas]
 
-The original tutorial document is here: https://hyperledger-fabric-ca.readthedocs.io/en/latest/operations_guide.html
-
-The companion guide written for v1.4 is here: https://medium.com/@kctheservant/a-companion-guide-to-fabric-ca-operation-guide-c81591ef0321
-
-The companion guide written for v2.2 is here: https://medium.com/@kctheservant/rework-a-companion-guide-to-fabric-ca-operation-guides-for-fabric-v2-2-7886e8037427
+Mediant Hyperledger Fabric se realiza una auditoria de todas las comunicaciones realizadas entre los
+trabajadores de 3 empresas mediante su almacenamiento en la red blockchain. 
+Hyperledger Fabric permite establecer el nivel necesario de privacidad en el envio de mensajes o la toma
+de decisiones mediante el establecimiento de canales entre grupos de usuario del igual nivel de competencia.
+Todas las decisiones quedan almacenadas de forma inmutable como una secuencia de transacciones en la cadena 
+de bloques (blockchain).
