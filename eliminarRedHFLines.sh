@@ -1,3 +1,3 @@
 docker compose down
 echo
-sudo rm -rf /tmp/hyperledger
+rm -rf /tmp/hyperledger

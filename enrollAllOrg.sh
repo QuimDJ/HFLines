@@ -47,6 +47,7 @@ cp /tmp/hyperledger/org0/orderer/assets/ca/org0-ca-cert.pem /tmp/hyperledger/org
 cp /tmp/hyperledger/org0/orderer/assets/tls-ca/tls-ca-cert.pem /tmp/hyperledger/org0/msp/tlscacerts/
 cp /tmp/hyperledger/org0/admin/msp/signcerts/cert.pem /tmp/hyperledger/org0/msp/admincerts/admin-org0-cert.pem
 cp ./org0-config.yaml /tmp/hyperledger/org0/msp/config.yaml
+
 echo "Org0 done"
 sleep 5
 echo 
