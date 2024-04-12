@@ -1,3 +1,6 @@
+
+export PATH=$PATH:../bin
+
 echo "Enroll Orderer"
 
 # preparation
@@ -35,7 +38,11 @@ fabric-ca-client enroll -d -u https://admin-org0:org0adminpw@0.0.0.0:7053
 mkdir -p /tmp/hyperledger/org0/orderer/msp/admincerts
 cp /tmp/hyperledger/org0/admin/msp/signcerts/cert.pem /tmp/hyperledger/org0/orderer/msp/admincerts/orderer-admin-cert.pem
 
-mkdir -p /tmp/hyperledger/org0/msp/{admincerts,cacerts,tlscacerts,users}
+mkdir -p /tmp/hyperledger/org0/msp/admincerts
+mkdir -p /tmp/hyperledger/org0/msp/cacerts
+mkdir -p /tmp/hyperledger/org0/msp/tlscacerts
+mkdir -p /tmp/hyperledger/org0/msp/users
+
 cp /tmp/hyperledger/org0/orderer/assets/ca/org0-ca-cert.pem /tmp/hyperledger/org0/msp/cacerts/
 cp /tmp/hyperledger/org0/orderer/assets/tls-ca/tls-ca-cert.pem /tmp/hyperledger/org0/msp/tlscacerts/
 cp /tmp/hyperledger/org0/admin/msp/signcerts/cert.pem /tmp/hyperledger/org0/msp/admincerts/admin-org0-cert.pem
@@ -113,7 +120,11 @@ cp /tmp/hyperledger/org1/admin/msp/signcerts/cert.pem /tmp/hyperledger/org1/peer
 mkdir -p /tmp/hyperledger/org1/admin/msp/admincerts
 cp /tmp/hyperledger/org1/admin/msp/signcerts/cert.pem /tmp/hyperledger/org1/admin/msp/admincerts/org1-admin-cert.pem
 
-mkdir -p /tmp/hyperledger/org1/msp/{admincerts,cacerts,tlscacerts,users}
+mkdir -p /tmp/hyperledger/org1/msp/admincerts
+mkdir -p /tmp/hyperledger/org1/msp/cacerts
+mkdir -p /tmp/hyperledger/org1/msp/tlscacerts
+mkdir -p /tmp/hyperledger/org1/msp/users
+
 cp /tmp/hyperledger/org1/peer1/assets/ca/org1-ca-cert.pem /tmp/hyperledger/org1/msp/cacerts/
 cp /tmp/hyperledger/org1/peer1/assets/tls-ca/tls-ca-cert.pem /tmp/hyperledger/org1/msp/tlscacerts/
 cp /tmp/hyperledger/org1/admin/msp/signcerts/cert.pem /tmp/hyperledger/org1/msp/admincerts/admin-org1-cert.pem
@@ -191,7 +202,11 @@ cp /tmp/hyperledger/org2/admin/msp/signcerts/cert.pem /tmp/hyperledger/org2/peer
 mkdir -p /tmp/hyperledger/org2/admin/msp/admincerts
 cp /tmp/hyperledger/org2/admin/msp/signcerts/cert.pem /tmp/hyperledger/org2/admin/msp/admincerts/org2-admin-cert.pem
 
-mkdir -p /tmp/hyperledger/org2/msp/{admincerts,cacerts,tlscacerts,users}
+mkdir -p /tmp/hyperledger/org2/msp/admincerts
+mkdir -p /tmp/hyperledger/org2/msp/cacerts
+mkdir -p /tmp/hyperledger/org2/msp/tlscacerts
+mkdir -p /tmp/hyperledger/org2/msp/users
+
 cp /tmp/hyperledger/org2/peer1/assets/ca/org2-ca-cert.pem /tmp/hyperledger/org2/msp/cacerts/
 cp /tmp/hyperledger/org2/peer1/assets/tls-ca/tls-ca-cert.pem /tmp/hyperledger/org2/msp/tlscacerts/
 cp /tmp/hyperledger/org2/admin/msp/signcerts/cert.pem /tmp/hyperledger/org2/msp/admincerts/admin-org2-cert.pem
@@ -269,7 +284,11 @@ cp /tmp/hyperledger/org3/admin/msp/signcerts/cert.pem /tmp/hyperledger/org3/peer
 mkdir -p /tmp/hyperledger/org3/admin/msp/admincerts
 cp /tmp/hyperledger/org3/admin/msp/signcerts/cert.pem /tmp/hyperledger/org3/admin/msp/admincerts/org3-admin-cert.pem
 
-mkdir -p /tmp/hyperledger/org3/msp/{admincerts,cacerts,tlscacerts,users}
+mkdir -p /tmp/hyperledger/org3/msp/admincerts
+mkdir -p /tmp/hyperledger/org3/msp/cacerts
+mkdir -p /tmp/hyperledger/org3/msp/tlscacerts
+mkdir -p /tmp/hyperledger/org3/msp/users
+
 cp /tmp/hyperledger/org3/peer1/assets/ca/org3-ca-cert.pem /tmp/hyperledger/org3/msp/cacerts/
 cp /tmp/hyperledger/org3/peer1/assets/tls-ca/tls-ca-cert.pem /tmp/hyperledger/org3/msp/tlscacerts/
 cp /tmp/hyperledger/org3/admin/msp/signcerts/cert.pem /tmp/hyperledger/org3/msp/admincerts/admin-org3-cert.pem
