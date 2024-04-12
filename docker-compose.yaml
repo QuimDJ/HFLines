@@ -243,7 +243,7 @@ services:
     environment:
         - CORE_PEER_ID=peer2-org3
         - CORE_PEER_ADDRESS=peer2-org3:12051
-        - CORE_PEER_LOCALMSPID=org2MSP
+        - CORE_PEER_LOCALMSPID=org3MSP
         - CORE_PEER_LISTENADDRESS=0.0.0.0:12051
         - CORE_PEER_MSPCONFIGPATH=/tmp/hyperledger/org3/peer2/msp
         - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
